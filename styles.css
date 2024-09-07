@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;;
+    background-color: #E0E0E0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin-top: 10rem;
+}
+
+h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+ section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+
+}
+
+.pesquisa_campo {
+    border: none;
+    border-radius: 1.5rem;
+    width: 35rem;
+    height: 2.8rem;
+    margin-bottom: 1.2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.pesquisa_botao {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    background-color:  #00BFFF;
+    color: #F5F7F8;
+    cursor: pointer;
+}
+
+.pesquisa_botao:hover {
+    background-color: #007FFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resultado {
+    width: 60rem;
+    height: 46vh;
+    color: #45474B;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    overflow-y: auto;
+}
+
+.titulo_resultado {
+    font-size: 1.6rem; 
+    color: #222831;
+}
+
+.item_resultado {
+    background: #FFFFFF;
+    border-radius: 0.6rem; 
+    padding: 1rem; 
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+footer {
+    background-color: white;
+    color: #45474B;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: sticky;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #E0E0E0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-family: "Merriweather", serif;
+        font-size: 2rem; 
+        text-align: center;
+        letter-spacing: 0.1rem;
+        margin-top: 5rem; 
+    }
+
+    h3 {
+        font-family: "Nunito", sans-serif;
+        font-size: 1.2rem; 
+        text-align: center;
+        margin: 3rem 0;
+        }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .pesquisa_campo {
+        width: 25rem; 
+        height: 2.5rem; 
+    }
+
+    .pesquisa_botao {
+        padding: 0.7rem 1.5rem; 
+    }
+
+    .resultado {
+        width: 90%; 
+        height: 50vh;
+    }
+
+    .titulo_resultado {
+        font-size: 1.4rem; 
+    }
+
+    .item_resultado {
+        margin-bottom: 1rem; 
+    }
+
+    footer {
+        font-size: 0.8rem;
+        position: fixed;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.8; 
+        padding: 0.6rem;
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+        margin-top: 0.5; 
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    section {
+        margin-bottom: 1rem;
+    }
+
+    .pesquisa_campo {
+        width: 85%; 
+        height: 3rem;
+        
+    }
+
+    .pesquisa_botao {
+        padding: 0.8rem 2rem;
+        margin: 0.5rem 0;
+    }
+
+    .resultado {
+        width: 95%; 
+        height: 40vh;
+    }
+
+    .titulo_resultado {
+        font-size: 1.2rem;
+    }
+
+    .item_resultado {
+        margin-bottom: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+        position: fixed;
+    }
+}
